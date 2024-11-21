@@ -1,0 +1,94 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .birthdayimg {
+    background-image: url('https://cdn.pixabay.com/photo/2018/02/23/21/29/roses-frame-3176667_960_720.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: red;
+    font-size: 35px;
+  }
+  
+  .topleft {
+    position: absolute;
+    color: yellow;
+    top: 0;
+    left: 12px;
+  }
+  
+  .bottomleft {
+    position: absolute;
+    color: red;
+    bottom:0;
+    left: 18px;
+  }
+  
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  hr {
+    margin: auto;
+    width: 40%;
+  }
+
+  .container-eg-btn-4 {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto 10px;
+    padding: .2em;
+    line-height: normal;
+    gap: 5em;
+}
+.container-eg-btn-4 .button {
+    background: #af40ff;
+    margin: 5px;
+    padding: 15px 35px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    transition: .3s;
+    z-index: 1;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 12px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: 700;
+}
+.container-eg-btn-4 .button-10 {
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+}
+.container-eg-btn-4 .button-10:after {
+    content: "";
+    position: absolute;
+    background-color: #000137;
+    border-radius: 8px;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    top: 4px;
+    left: 4px;
+    z-index: -1;
+    transition: opacity .3s ease-in-out;
+    opacity: 0;
+}
+.container-eg-btn-4 .button-10:hover:after {
+    opacity: 1;
+}
+.container-eg-btn-4 .button-10:active:after {
+    opacity: 0;
+}
